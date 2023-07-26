@@ -10,7 +10,7 @@ then
 	for file in $dir_name/*;
 	do
 		mv $file sorted/
-		(( cnt++ ))
+		(( cnt++ )) 
 	done
 	ls sorted | sort | cat > sorted
 	echo "Successfuly moved file form $dir_name directory to sorted directory"
@@ -18,4 +18,3 @@ then
 else
 	echo "Error!!! wrong directory name"
 fi
-

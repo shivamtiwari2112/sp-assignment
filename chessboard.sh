@@ -1,8 +1,13 @@
 #!/bin/bash
 
-for((i=1; i<=8; i++))
+echo -e "enter the size of chessboard: \c"
+read size
+echo "## is used of black square, and ** is used for white square"
+echo
+
+for((i=1; i<=$size; i++))
 do
-	for((j=1; j<=8; j++))
+	for((j=1; j<=$size; j++))
 	do
 		if (( ($1 + $j) % 2 == 0 )); then
 
